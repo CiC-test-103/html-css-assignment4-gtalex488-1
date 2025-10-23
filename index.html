@@ -2,68 +2,52 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Results summary component | Assignment 4</title>
-  <link rel="stylesheet" href="style.css">
-
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="variables.css">
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <div class="container">  
-    <div class="result-board">  
-      <h2> Your Result </h2>
-        <div class="circle"> 
-           <p class="r-score">76</p>
-           <p class="of100">of 100</p>
+  
+  <main>
+    <section class="result">
+      <h2>Your Result</h2>
+        <div class="score-circle">
+          <div class="score-number">76</div>
+          <p class="score-total">of 100</p>
+        </div>  
+          <h3>Great</h3>
+          <span class="description">You scored higher than 65% of the people who have taken 
+             these tests.</span>
+    </section>
+
+    <section class="summary"> 
+      <h2>Summary</h2>
+      
+        <div class="cat-item reaction">
+          <span><img src="assets/images/icon-reaction.svg" alt="Reaction icon"><b>Reaction</b></span> 
+          <span class="score">80 <span class="on100">/ 100</span></span>
+        </div>  
+
+        <div class="cat-item memory">
+          <span><img src="assets/images/icon-memory.svg" alt="Memory icon"><b>Memory</b></span> 
+          <span class="score">92 <span class="on100">/ 100</span></span>
         </div>
 
-        <div class="grade">Great</div>
+        <div class="cat-item verbal">
+          <span><img src="assets/images/icon-verbal.svg" alt="Verbal icon"><b>Verbal</b></span> 
+          <span class="score">61 <span class="on100">/ 100</span></span>
+        </div>
 
-        <p class="description">You scored higher than 65% of<br> the people who have taken <br>these tests.</p>
-        
-    </div>  <!--result-board-->
-     
-    <div class="summary"> 
-      <span class="summary-title"> Summary</span>
+        <div class="cat-item visual">
+          <span><img src="assets/images/icon-visual.svg" alt="Visual icon"><b>Visual</b></span> 
+          <span class="score">73 <span class="on100">/ 100</span></span>
+        </div>
 
-      <div class="summary-item reaction"> 
-        <span> <img src="assets/images/icon-reaction.svg"/>Reaction</span>  
-        <span class="score">80
-          <span class="0n100">/ 100</span>
-        </span>
-      </div>  <!--reaction-->
+        <button class="continue"> Continue </button> 
 
-      <div class="summary-item memory">
-        <span><img src="assets/images/icon-memory.svg"/>Memory</span>   
-        <span class="score">92 
-          <span class="0n100">/ 100</span>
-        </span>
-      </div>   <!--memory-->
-
-      <div class="summary-item verbal">
-        <span><img src="assets/images/icon-verbal.svg"/>Verbal</span>   
-        <span class="score">61 
-          <span class="0n100">/ 100</span> 
-        </span>
-      </div>  <!--verbal-->
+    </section>
+  </main>
   
-      <div class="summary-item visual">
-        <span><img src="assets/images/icon-visual.svg"/>Visual</span>   
-        <span class="score">73 
-          <span class="0n100">/ 100</span> 
-        </span>
-      </div>  <!--visual-->
-  
-      <button class="continue"> Continue </button> 
-    </div>   <!--summary-->
-       
-  </div>  <!-- .container -->
-
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Ty(Alex) Gieng</a>.
-  </div>
 </body>
 </html>
