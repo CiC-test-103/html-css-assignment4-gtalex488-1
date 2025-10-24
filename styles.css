@@ -24,7 +24,7 @@ body {
   align-items: center;
   min-height: 100vh;
   background-color: var(--clr-paleBlue);
-  padding: 230px 0;
+   
 }
 
 /* 6. Improve media defaults */
@@ -64,7 +64,7 @@ main {
   display: grid;
   grid-template-columns: 1fr 1fr;
   max-width: 660px;
-  margin: 0 auto;
+  margin: 230px auto 230px;
   background-color: var(--clr-white);
   font-family: var(--fs-base);
   border-radius: 25px;
